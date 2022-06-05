@@ -3,9 +3,11 @@ Algorithms and practice projects for sensor fusion project from Udacity
 Original uncompleted codes available at https://github.com/udacity/SFND_Lidar_Obstacle_Detection
 
 ## Lidar Simulation
-Folder has three files.
+The folder has three files.
 Environment creates a simulate highway and calls a simulated Lidar. The parameters of the lidar are in lidar.h
 The created lidar object returns a cloud of points. This cloud of points include the points from the road and obstacles (like cars)
+pointProcesser has several functions to apply to the data points. The functions use PCL library that need to be installed to call these functions.
+
 Two main algorithms are applied to the cloud data:
 
 - ### Segmentation
