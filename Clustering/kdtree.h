@@ -89,7 +89,7 @@ private:
 			if(target[state_] - distanceTol < node->point[state_])
 				BinarySearch(node->left, ids, target, depth + 1, distanceTol);
 			
-			if (target[state_] - distanceTol < node->point[state_])
+			if (target[state_] + distanceTol > node->point[state_])
 				BinarySearch(node->right, ids, target, depth + 1, distanceTol);
 
 		}
