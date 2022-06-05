@@ -29,6 +29,7 @@ pcl::PointCloud<pcl::PointXYZ>::Ptr CreateData()
   		cloud->points.push_back(point);
   	}
   	// Add outliers
+    //comment new
   	int numOutliers = 10;
   	while(numOutliers--)
   	{
