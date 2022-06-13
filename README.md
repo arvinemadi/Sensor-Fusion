@@ -16,3 +16,7 @@ It always keeps the largest processed line or plane and returns that. Note that 
 The principle is similar to binary search. The data structure that is used is KdTree: https://en.wikipedia.org/wiki/K-d_tree
 A k-d tree is created from all the cloud points. Having created a cloud a search function is created that does a binary traversal of the tree and find all the points that are within a certain tolerance value.
 The clustering algorithm then does a DFS on the tree and returns different clusters.
+
+## openCV
+
+- Trying feature detection algorithms available in openCV and comparing them for performance and speed. Two algorithms of Shi-Tomasi [gradient-based] (https://en.wikipedia.org/wiki/Corner_detection) and FAST [Binary-based] (https://en.wikipedia.org/wiki/Features_from_accelerated_segment_test) have been used. FAST is 20x faster!
